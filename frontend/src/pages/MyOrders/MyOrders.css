@@ -1,0 +1,97 @@
+.my-orders{
+    margin: 50px 0px;
+    font-family: Hi Melody;
+}
+.my-orders .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+.my-orders-order{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #0c0c0c;
+    border: 2px solid #0c0c0c;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #fbd24e;
+}
+.my-orders-order img{
+    width: 50px;
+}
+.my-orders-order p span{
+    color: #fbd24e;
+}
+.my-orders-order p b{
+    font-weight: 500;
+    color: #0c0c0c;
+}
+.my-orders button {
+    appearance: button;
+    background-color: #FBD24E;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #000, #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Hi Melody, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .my-orders button:focus {
+    text-decoration: none;
+  }
+  
+  .my-orders button:hover {
+    text-decoration: none;
+    transform: translate(2px, 2px);
+    box-shadow: inset 0 0 0 1px #000, #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  }
+  
+  .my-orders button:active {
+    box-shadow: inset 0 0 0 1px #000, rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .my-orders button:not([disabled]):active {
+    box-shadow: inset 0 0 0 1px #000, #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .my-orders button {
+      padding: 12px 50px;
+    }
+  }
+@media (max-width:900px) {
+    .my-orders-order{
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 5px;
+        font-size: 12px;
+    }
+    .my-orders-order button{
+        font-size: 10px;
+    }
+    
+}

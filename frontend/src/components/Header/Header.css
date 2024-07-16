@@ -1,0 +1,98 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.header-contents {
+    font-family: David Libre;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-family: David Libre;
+    font-weight: 500;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents button {
+    appearance: button;
+    background-color: #FBD24E;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #000, #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Hi Melody, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .header-contents button:focus {
+    text-decoration: none;
+  }
+  
+  .header-contents button:hover {
+    text-decoration: none;
+    transform: translate(2px, 2px);
+    box-shadow: inset 0 0 0 1px #000, #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  }
+  
+  .header-contents button:active {
+    box-shadow: inset 0 0 0 1px #000, rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .header-contents button:not([disabled]):active {
+    box-shadow: inset 0 0 0 1px #000, #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .header-contents button {
+      padding: 12px 50px;
+    }
+  }
+
+@media (max-width:1050px) {
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media(max-width:750px){
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+       display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
