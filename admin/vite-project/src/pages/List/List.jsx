@@ -5,11 +5,12 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const List = ({url}) => {
-
+  
+  const new_url = "https://bon-appetit-backend-i7li.onrender.com";
   const [list, setList] = useState([]);
 
   const fetchList = async () => {
-    const response = await axios.get(`${url}/api/food/list`);
+    const response = await axios.get(`${new_url}/api/food/list`);
     if(response.data.success) {
       setList(response.data.data);
     }
@@ -19,7 +20,7 @@ const List = ({url}) => {
   }
 
   const removeFood = async(foodId) => {
-    const response = await axios.post(`${url}/api/food/remove`, {id:foodId})
+    const response = await axios.post(`${new_url}/api/food/remove`, {id:foodId})
     await fetchList();
     if(response.data.success) {
       toast.success(response.data.message)
@@ -47,7 +48,7 @@ const List = ({url}) => {
         {list.map((item, index)=>{
             return (
               <div key={index} className='list-table-format'>
-                <img src={`${url}/images/` + item.image} alt="" />
+                <img src={`${new_url}/images/` + item.image} alt="" />
                 <p>{item.name}</p>
                 <p>{item.category}</p>
                 <p>${item.price}</p>
