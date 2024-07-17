@@ -8,8 +8,7 @@ import cartRouter from "./routes/cartRoute.js"
 import orderRouter from "./routes/orderRoute.js"
 
 
-/**
- * *app config
+/**app config
  */
 
 const app = express()
