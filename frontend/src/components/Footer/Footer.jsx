@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Bon Appetit is your go-to online destination for gourmet meals delivered right to your doorstep. Our user-friendly platform offers a diverse menu featuring everything from classic comfort foods to innovative global dishes, all crafted with the freshest ingredients. With just a few clicks, you can customize and order delicious meals that bring the experience of fine dining straight to your home. Discover the convenience and joy of exceptional food with Bon Appetit—where every meal is a culinary adventure.</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
@@ -27,12 +27,14 @@ const Footer = () => {
             <h2>GET IN TOUCH</h2>
             <ul>
                 <li>+1-212-456-7890</li>
-                <li>contact@tomato.com</li>
+                <li>contact@bonappetit.website.com</li>
             </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2024 © Tomato.com - All Right Reserved.</p>
+      <p className="footer-copyright">
+      Copyright {new Date().getFullYear()} © Bon Appetit | All rights reserved.
+      </p>
     </div>
   )
 }
