@@ -34,3 +34,19 @@ To get started with Bon Appetit, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/bon-appetit.git
+
+Usage
+Frontend: Access the main food ordering website here.
+Admin Panel: Manage orders and food items via the admin panel here.
+Admin Panel
+The admin panel is designed for easy management of the food items and orders. Use the following URL to access the admin interface:
+
+Admin Panel URL: https://bon-appetit-admin.vercel.app/add
+Contributing
+We welcome contributions from the community! To contribute to this project, please follow these steps:
+
+Fork the repository
+Create a new branch (git checkout -b feature/your-feature)
+Make your changes and commit them (git commit -am 'Add new feature')
+Push to the branch (git push origin feature/your-feature)
+Create a new Pull Request
