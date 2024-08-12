@@ -41,7 +41,9 @@ Admin Panel: Manage orders and food items via the admin panel here.
 Admin Panel
 The admin panel is designed for easy management of the food items and orders. Use the following URL to access the admin interface:
 
-[Admin Panel](https://bon-appetit-admin.vercel.app)
+Bon Appetit Website - [Website](https://bon-appetit-website.vercel.app/)
+Bon Appetit Admin Panel - [Admin Panel](https://bon-appetit-admin.vercel.app)
+
 Contributing
 We welcome contributions from the community! To contribute to this project, please follow these steps:
 
